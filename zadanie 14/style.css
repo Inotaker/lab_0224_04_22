@@ -1,0 +1,167 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0); 
+}
+
+.scene {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #99c5d6; 
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.house {
+    position: absolute;
+    bottom: 50px;
+    width: 200px;
+    height: 60px;
+    background-color: #FFFFFF;
+    z-index: 10;
+}
+
+
+.house::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    width: 90%;
+    left:20px;
+    height: 20px;
+    background-color:hsl(23, 49%, 38%);
+    border-bottom: 2px solid black;
+    z-index: 10;
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+}
+
+.house::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    width: 80%;
+    left:22px;
+    height: 30px;
+    background-color: hsl(23, 49%, 38%);
+}
+
+.tower {
+    position: absolute;
+    bottom: 50px;
+    width: 60px;
+    height: 100px;
+    background-color: white;
+    z-index: 1;
+}
+
+.tower::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    width: 60px;
+    height: 40px;
+    background-color: hsl(23, 49%, 38%);
+    border-bottom: 2px solid black;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.tower::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 22px;
+    width: 15px;
+    height: 20px;
+    background-color: hsl(0, 0%, 0%);
+}
+
+.cloud {
+    position: absolute;
+    top: 30px;
+    width: 90px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    clip-path: polygon(6% 73%, 19% 78%, 28% 76%, 43% 79%, 61% 73%, 77% 79%, 97% 76%, 95% 66%, 89% 53%, 74% 49%, 65% 34%, 53% 29%, 44% 34%, 38% 41%, 33% 47%, 24% 47%, 18% 44%, 8% 48%, 1% 53%, 1% 64%);
+}
+
+
+.cloud1 {
+    left: -70px;
+    animation: moveClouds 10s linear infinite;
+}
+
+.cloud2 {
+    left: 80px;
+    animation: moveClouds 15s linear infinite;
+}
+
+.window1 {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    width: 15px;
+    height: 20px;
+    background-color: black;
+}
+
+.window2 {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    width: 15px;
+    height: 20px;
+    background-color: black;
+}
+.window3 {
+    position: absolute;
+    top: 20px;
+    left: 90px;
+    width: 15px;
+    height: 20px;
+    background-color: black;
+}
+
+.window4 {
+    position: absolute;
+    top: 20px;
+    left: 130px;
+    width: 15px;
+    height: 20px;
+    background-color: black;
+}
+.window5 {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    width: 15px;
+    height: 20px;
+    background-color: black;
+}
+
+@keyframes moveClouds {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(300px);
+    }
+}

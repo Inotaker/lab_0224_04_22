@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.both {
+    resize: both;
+    overflow: auto;
+
+}
+
+.none {
+    resize: none;
+}
+
+.horizontal {
+    resize: horizontal;
+    overflow: auto;
+}
+
+.vertical {
+    resize: vertical;
+    overflow: auto;
+}

@@ -1,0 +1,28 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+p {
+    text-decoration-line:underline;
+}
+
+.one {
+    text-decoration-style:wavy;
+    text-decoration-color: blue;
+}
+.two {
+    text-decoration-style: dotted;
+    text-decoration-color: pink;
+}
+.three {
+    text-decoration-style: dashed;
+    text-decoration-color: green;
+}
+.four {
+    text-decoration-style: solid;
+    text-decoration-color: red;
+}

@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.2em 0.4em black;
+    border: none;
+    background-color: gray;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-sm {
+    font-size: 0.75em;
+}
+
+.btn-xl {
+    font-size: 1.5em;
+}
+
+button.btn {
+    display: inline-block;
+}
